@@ -9,7 +9,7 @@ A simple n-gram based model for predicting the next character in Khmer text sequ
 
 ### Training a New Model
 ```python
-git clone [repository-url]
+git clone https://github.com/monivireakly/smol-khmer-ngram.git
 cd khmer-syllable-prediction
 pip install -r requirements.txt
 
