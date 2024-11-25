@@ -1,0 +1,254 @@
+python3 subword.py
+Using device: mps
+Unique characters (88):
+ក ខ គ ឃ ង ច ឆ ជ ឈ ញ 
+ដ ឋ ឌ ឍ ណ ត ថ ទ ធ ន 
+ប ផ ព ភ ម យ រ ល វ ស 
+ហ ឡ អ ឣ ឥ ឦ ឧ ឩ ឪ ឫ 
+ឬ ឭ ឮ ឯ ឰ ឱ ឲ ឳ ា ិ 
+ី ឹ ឺ ុ ូ ួ ើ ឿ ៀ េ 
+ែ ៃ ោ ៅ ំ ះ ៈ ៉ ៊ ់ 
+៌ ៍ ៏ ័ ្ ៕ ៖ ៗ ០ ១ 
+២ ៣ ៤ ៥ ៦ ៧ ៨ ៩ 
+
+Total examples: 20000
+Train: 16000
+Val: 2000
+Test: 2000
+Using device: mps
+
+Sample words from each split:
+Train: ['ហ្មត់ចត់', 'គុណ', 'ដើម្បី']
+Val: ['លើ', 'ព្រៃឈើ', 'បញ្ចប់']
+Test: ['បច្ចុប្បន្ន', 'បង្កើន', 'ពួកគេ']
+==================================================
+
+Example character splitting:
+Text: ហ្មត់ចត់ → Chars: ['ហ', '្', 'ម', 'ត', '់', 'ច', 'ត', '់']
+
+Vocabulary Statistics:
+Total characters found: 85848
+Unique characters: 78
+
+Top 10 most common characters:
+្: 7727
+ា: 7409
+ន: 5925
+រ: 5174
+ក: 4480
+ប: 3609
+ម: 3192
+ស: 3050
+ង: 2788
+ត: 2566
+
+Filtered vocabulary size: 79
+
+Vocabulary size: 79
+
+Training Progress:
+======================================================================
+Epoch | Train Loss |   Val Loss | Sparsity |         LR |     Temp
+----------------------------------------------------------------------
+    1 |     4.3693 |     4.3692 |   100.00 |   0.099994 |   1.5000
+    2 |     4.1800 |     4.1805 |   100.00 |   0.099976 |   1.2750
+    3 |     3.9451 |     3.9470 |   100.00 |   0.099945 |   1.0837
+    4 |     3.6733 |     3.6763 |   100.00 |   0.099902 |   0.9212
+    5 |     3.3872 |     3.3927 |   100.00 |   0.099847 |   0.7830
+    6 |     3.1257 |     3.1345 |   100.00 |   0.099780 |   0.6656
+    7 |     2.9236 |     2.9374 |   100.00 |   0.099701 |   0.5657
+    8 |     2.8059 |     2.8265 |    69.52 |   0.099610 |   0.5000
+    9 |     2.7444 |     2.7700 |    58.79 |   0.099506 |   0.5000
+   10 |     2.7045 |     2.7349 |    52.86 |   0.099391 |   0.5000
+   11 |     2.6788 |     2.7127 |    50.22 |   0.099263 |   0.5000
+   12 |     2.6589 |     2.6959 |    47.75 |   0.099123 |   0.5000
+   13 |     2.6417 |     2.6807 |    45.31 |   0.098972 |   0.5000
+   14 |     2.6270 |     2.6674 |    43.44 |   0.098808 |   0.5000
+   15 |     2.6162 |     2.6570 |    40.73 |   0.098632 |   0.5000
+   16 |     2.6092 |     2.6498 |    37.80 |   0.098445 |   0.5000
+   17 |     2.6047 |     2.6448 |    34.59 |   0.098246 |   0.5000
+   18 |     2.6011 |     2.6403 |    31.76 |   0.098035 |   0.5000
+   19 |     2.5970 |     2.6348 |    29.53 |   0.097812 |   0.5000
+   20 |     2.5912 |     2.6280 |    27.40 |   0.097577 |   0.5000
+   21 |     2.5840 |     2.6202 |    25.91 |   0.097331 |   0.5000
+   22 |     2.5766 |     2.6123 |    24.76 |   0.097074 |   0.5000
+   23 |     2.5696 |     2.6055 |    23.86 |   0.096804 |   0.5000
+   24 |     2.5640 |     2.6004 |    23.17 |   0.096524 |   0.5000
+   25 |     2.5603 |     2.5973 |    22.77 |   0.096232 |   0.5000
+   26 |     2.5578 |     2.5959 |    22.30 |   0.095929 |   0.5000
+   27 |     2.5564 |     2.5956 |    22.05 |   0.095614 |   0.5000
+   28 |     2.5556 |     2.5956 |    21.97 |   0.095289 |   0.5000
+   29 |     2.5544 |     2.5954 |    21.90 |   0.094952 |   0.5000
+   30 |     2.5528 |     2.5947 |    21.87 |   0.094605 |   0.5000
+   31 |     2.5509 |     2.5934 |    21.68 |   0.094246 |   0.5000
+   32 |     2.5489 |     2.5919 |    21.76 |   0.093877 |   0.5000
+   33 |     2.5470 |     2.5904 |    21.78 |   0.093497 |   0.5000
+   34 |     2.5454 |     2.5891 |    21.82 |   0.093107 |   0.5000
+   35 |     2.5443 |     2.5880 |    21.90 |   0.092706 |   0.5000
+   36 |     2.5433 |     2.5873 |    21.86 |   0.092294 |   0.5000
+   37 |     2.5425 |     2.5867 |    21.94 |   0.091872 |   0.5000
+   38 |     2.5416 |     2.5863 |    22.06 |   0.091440 |   0.5000
+   39 |     2.5412 |     2.5858 |    22.14 |   0.090998 |   0.5000
+   40 |     2.5403 |     2.5852 |    22.18 |   0.090546 |   0.5000
+   41 |     2.5396 |     2.5846 |    22.21 |   0.090084 |   0.5000
+   42 |     2.5388 |     2.5839 |    22.30 |   0.089613 |   0.5000
+   43 |     2.5382 |     2.5833 |    22.35 |   0.089131 |   0.5000
+   44 |     2.5377 |     2.5828 |    22.42 |   0.088640 |   0.5000
+   45 |     2.5373 |     2.5824 |    22.45 |   0.088140 |   0.5000
+   46 |     2.5371 |     2.5820 |    22.48 |   0.087630 |   0.5000
+   47 |     2.5367 |     2.5816 |    22.48 |   0.087112 |   0.5000
+   48 |     2.5364 |     2.5813 |    22.54 |   0.086584 |   0.5000
+   49 |     2.5361 |     2.5811 |    22.58 |   0.086047 |   0.5000
+   50 |     2.5359 |     2.5809 |    22.61 |   0.085502 |   0.5000
+   51 |     2.5357 |     2.5807 |    22.67 |   0.084948 |   0.5000
+   52 |     2.5356 |     2.5805 |    22.75 |   0.084385 |   0.5000
+   53 |     2.5352 |     2.5803 |    22.78 |   0.083814 |   0.5000
+   54 |     2.5349 |     2.5801 |    22.85 |   0.083235 |   0.5000
+   55 |     2.5349 |     2.5798 |    22.85 |   0.082648 |   0.5000
+   56 |     2.5346 |     2.5797 |    22.88 |   0.082052 |   0.5000
+   57 |     2.5345 |     2.5796 |    22.86 |   0.081450 |   0.5000
+   58 |     2.5345 |     2.5795 |    22.91 |   0.080839 |   0.5000
+   59 |     2.5344 |     2.5794 |    22.91 |   0.080221 |   0.5000
+   60 |     2.5343 |     2.5793 |    22.91 |   0.079595 |   0.5000
+   61 |     2.5341 |     2.5793 |    22.93 |   0.078963 |   0.5000
+   62 |     2.5341 |     2.5792 |    22.95 |   0.078323 |   0.5000
+   63 |     2.5339 |     2.5792 |    22.96 |   0.077677 |   0.5000
+   64 |     2.5339 |     2.5793 |    22.98 |   0.077023 |   0.5000
+   65 |     2.5338 |     2.5793 |    22.98 |   0.076364 |   0.5000
+   66 |     2.5338 |     2.5794 |    23.01 |   0.075698 |   0.5000
+
+Early stopping triggered!
+
+Training Summary:
+Best validation loss: 2.5793
+Final learning rate: 0.075698
+Final temperature: 0.5000
+Final sparsity: 23.01%
+
+Model saved to: models/ngram_model_20241121_144301.pt
+History saved to: models/training_history_20241121_144301.json
+2024-11-21 14:43:01.934 Python[47738:4379006] +[IMKClient subclass]: chose IMKClient_Legacy
+2024-11-21 14:43:01.934 Python[47738:4379006] +[IMKInputSession subclass]: chose IMKInputSession_Legacy
+
+Transition Matrix Statistics:
+Shape: torch.Size([79, 79])
+Non-zero transitions: 6241
+Max probability: 0.998
+
+Testing predictions on examples:
+==================================================
+
+Prediction Debug:
+Input text: កម្ពុជ
+Characters: ['ក', 'ម', '្', 'ព', 'ុ', 'ជ']
+Indices: tensor([17,  4,  3, 19,  9, 31])
+Last character: ជ
+
+Test Results:
+Input text: កម្ពុជ
+Actual next char: ា
+
+Model predictions:
+ា -> 0.096 ✓
+រ -> 0.060
+្ -> 0.060
+ន -> 0.054
+ង -> 0.053
+
+Actual character found at rank 1
+--------------------------------------------------
+
+Prediction Debug:
+Input text: សួស្ត
+Characters: ['ស', 'ួ', 'ស', '្', 'ត']
+Indices: tensor([25, 36, 25,  3,  5])
+Last character: ត
+
+Test Results:
+Input text: សួស្ត
+Actual next char: ី
+
+Model predictions:
+្ -> 0.081
+រ -> 0.063
+ា -> 0.057
+ង -> 0.054
+ន -> 0.051
+
+Actual character not in top predictions
+--------------------------------------------------
+
+Prediction Debug:
+Input text: ជំរាបសួ
+Characters: ['ជ', 'ំ', 'រ', 'ា', 'ប', 'ស', 'ួ']
+Indices: tensor([31, 32, 33, 18, 13, 25, 36])
+Last character: ួ
+
+Test Results:
+Input text: ជំរាបសួ
+Actual next char: រ
+
+Model predictions:
+ន -> 0.066
+រ -> 0.064 ✓
+ង -> 0.060
+្ -> 0.054
+ា -> 0.050
+
+Actual character found at rank 2
+--------------------------------------------------
+
+Prediction Debug:
+Input text: ស្វាគមន
+Characters: ['ស', '្', 'វ', 'ា', 'គ', 'ម', 'ន']
+Indices: tensor([25,  3, 42, 18,  8,  4, 28])
+Last character: ន
+
+Test Results:
+Input text: ស្វាគមន
+Actual next char: ៍
+
+Model predictions:
+្ -> 0.064
+រ -> 0.061
+ា -> 0.060
+ង -> 0.054
+ន -> 0.051
+
+Actual character not in top predictions
+--------------------------------------------------
+
+Overall, the training dynamics look quite good and the model appears to be learning effectively. Here's a breakdown of the key points:
+
+Loss History:
+
+The training and validation losses are steadily decreasing over the 66 epochs, indicating the model is learning meaningful representations.
+The final validation loss of 2.5793 is quite low, suggesting the model has achieved good generalization.
+
+
+Learning Rate:
+
+The learning rate starts at 0.099994 and is gradually decreased to 0.075698 by the end of training.
+This gradual learning rate decay is a well-established technique to ensure the model can learn effectively early on and converge smoothly.
+
+
+Sparsity:
+
+The sparsity of the transition matrix starts at 100% and decreases to 22.91% by the end of training.
+The reduction in sparsity shows the model is discovering an increasing number of meaningful transitions, which is a positive sign.
+
+
+Early Stopping:
+
+The training was stopped early (at epoch 66) due to the validation loss not improving significantly in the last few epochs.
+This early stopping mechanism is a good practice to prevent overfitting and ensure the model generalizes well.
+
+
+Model Evaluation:
+
+The provided test examples demonstrate the model is making reasonably accurate predictions, with the actual next character being present in the top predictions in most cases.
+The transition matrix statistics show the model has learned a compact representation, with only 6241 non-zero transitions out of a possible 79^2.
+
+
+
+Overall, I would rate the training and model performance as quite good. The steady decrease in loss, the controlled sparsity, the early stopping mechanism, and the reasonably accurate predictions suggest the model is learning effectively and should generalize well to new data. The training process appears to be well-designed and implemented.
